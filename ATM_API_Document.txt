@@ -1,0 +1,21 @@
+ATM Service End Point Url's:
+--------------------------
+
+Positve test scenarios:
+---------------------
+
+1. The below endpoint url used to access the list of all atms in json format
+  http://localhost:8080/allatmList
+
+2. The below end point used to filter  the atms by city and test other city instead of  Utrecht city. 
+http://localhost:8080/atms/Utrecht
+
+My application will support url encode even if you entered city with spaces.
+
+3. http://localhost:8080/atms/Koog aan de Zaan
+
+Negative test scenarios:
+--------------------
+
+1.if no atms are available to perticular city we will display "No atm's available for this City"  error message.
+2.if there is servcie down or network issue we will display "SERVICE_DOWN" error message.
